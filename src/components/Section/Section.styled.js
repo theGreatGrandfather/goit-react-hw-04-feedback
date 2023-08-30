@@ -1,18 +1,21 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
-export const SectionElemet = styled.section`
+export const MainSection = styled.section`
 display: flex;
-flex-direction: column;
-align-items: center;
+width:100vw;
+padding-top: 24px;
+padding-bottom: 24px;
 `
 export const Container = styled.div`
 display: flex;
 flex-direction: column;
-max-width: 1440px;
 margin-left: auto;
 margin-right: auto;
-text-align: center;
 `
+
 export const Title = styled.h2`
-text-align: center;
+display: block;
+width: 100%;
+font-size: 28px;
+line-height: 150%;
 `
