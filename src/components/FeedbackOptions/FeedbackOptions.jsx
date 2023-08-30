@@ -11,7 +11,7 @@ function FeedbackOptions({ options, onLeaveFeedback }) {
                     key={option}
                     name={option}
                     type="button"
-                    onClick={onLeaveFeedback}
+                    onClick={() => onLeaveFeedback( option)}
                 >
                     {option}
                 </FeedBackBtn>)}
@@ -21,7 +21,7 @@ function FeedbackOptions({ options, onLeaveFeedback }) {
 
 FeedbackOptions.propTypes = {
     option: PropTypes.arrayOf(PropTypes.string.isRequired),
-    onValueBtnClick: PropTypes.func.isRequired,
+    onLeaveFeedback: PropTypes.func.isRequired,
 }
 
 export default FeedbackOptions
